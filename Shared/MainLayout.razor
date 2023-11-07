@@ -3,3 +3,38 @@
 <MudThemeProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
+
+<MudAppBar Class="white">
+    <MudCarousel Style="height:50px; width: 50px;" Class="ml-15" ShowArrows=false ShowBullets=false AutoCycle=false TData="object" SelectedIndex=index @onmouseenter=@IconMouseOver @onmouseleave=@IconMouseOut>
+        <MudCarouselItem Class="d-flex align-center justify-center" Transition=Transition.Fade Color="@Color.Inherit">
+            <MudIcon Icon="@Icons.Material.Filled.Circle" Size="@Size.Large" Style="color: darkslategray"/>
+        </MudCarouselItem>
+        <MudCarouselItem Class="d-flex align-center justify-center" Transition=Transition.Fade Color="@Color.Inherit">
+            <MudIcon Icon="@Icons.Material.Filled.Camera" Size="@Size.Large" Style="color: limegreen"/>
+        </MudCarouselItem>
+    </MudCarousel>
+    <MudText Color="Color.Dark" Typo="Typo.h5" Style="font-family: 'Lucida Handwriting'"><b> Andrei Popescu</b></MudText>
+    <MudSpacer />
+    <CustomButton Text="Home" Path="/"/>
+    <CustomButton Text="About" Path="/About"/>
+    <CustomButton Text="Work" Path="/Work"/>
+</MudAppBar>
+
+<MudLayout>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code{
+    int index = 0;
+
+    private void IconMouseOver()
+    {
+        index = 1;
+    }
+    private void IconMouseOut()
+    {
+        index = 0;
+    }
+}
