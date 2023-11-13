@@ -1,0 +1,25 @@
+﻿<MudCard Style="background-color:transparent;" @onmouseenter=ElevationUp @onmouseleave=ElevationDown Elevation=@elevation>
+    <MudCardHeader>
+        @headerFragment
+    </MudCardHeader>
+    <MudCardContent>
+        @ChildContent
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter]
+    public RenderFragment headerFragment { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    int elevation = 5;
+    private void ElevationUp()
+    {
+        elevation += 10;
+    }
+    private void ElevationDown()
+    {
+        elevation -= 10;
+    }
+}
