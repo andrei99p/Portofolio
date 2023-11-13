@@ -23,7 +23,7 @@
     <CustomButton Text="Work" Path="/Work"/>
 </MudAppBar>
 
-<MudLayout Style="z-index:2; margin-bottom:70px;">
+<MudLayout Style="z-index:0; margin-bottom:70px;">
     <MudMainContent>
         @Body
     </MudMainContent>
@@ -37,10 +37,15 @@
 *@
 
 <MudImage Src="resources/tree-oval.svg" Style="position:fixed; margin:0px; padding-bottom:0px; right:0px; bottom:0px; width:30vw; user-select:none; " />
-<MudAppBar Bottom=true Color="Color.Dark" Style="overflow:hidden; z-index:0; padding:0;" Class="d-flex">
-    <MudText Align="Align.Center" Style="margin:0px; padding:0px;" Class="align-self-start py-4 flex-1">
-        Contact <br/>henlo
-    </MudText>
+<MudAppBar Bottom="true" Color="Color.Dark" Style="overflow:hidden; z-index:0; padding:0;" Class="d-flex">
+    <MudContainer Class="align-self-start">
+        <MudText Typo="Typo.h6" Align="Align.Center" Class="align-self-start">
+            Contact
+        </MudText>
+        <MudText Typo="Typo.body2" Align="Align.Center" Class="align-self-start">
+            Email : andrei.popescu29@yahoo.com &nbsp tel. : +40 73326828
+        </MudText>
+    </MudContainer>
     <MudImage Src="resources/tree-circle.svg" Style="z-index:0; position:fixed; margin:0px; padding-bottom:0px; left:0px; bottom:0px; width:20vw; user-select:none;" />
 
 </MudAppBar>
