@@ -1,6 +1,8 @@
-﻿<MudCard Style="background-color:transparent;" @onmouseover=ElevationUp @onmouseout=ElevationDown Elevation=@elevation>
+﻿<MudCard Style="background-color:whitesmoke;" @onmouseover=ElevationUp @onmouseout=ElevationDown Elevation=@elevation>
     <MudCardHeader>
-        @headerFragment
+        <CardHeaderContent>
+            @HeaderFragment
+        </CardHeaderContent>
     </MudCardHeader>
     <MudCardContent>
         @ChildContent
@@ -9,7 +11,7 @@
 
 @code {
     [Parameter]
-    public RenderFragment headerFragment { get; set; }
+    public RenderFragment HeaderFragment { get; set; }
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 

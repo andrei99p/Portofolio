@@ -5,19 +5,21 @@
 <MudContainer>
     <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5 ">
         <p>My name is <b><span Style="color: forestgreen; font-family:'Baskerville Old Face' ">Dragos-Andrei Popescu </span> </b></p>
-        <p>and I work as a software developer since 2021.</p>        
+        <p>and I work as a software developer since 2021.</p>
     </MudText>
     <br />
-    <CustomCard>
-        <MudCardHeader>
-            <CardHeaderContent>
-                <MudText Typo="Typo.h6" Align="Align.Start">
-                    <p>In my workflow I:</p>
-                </MudText>
-            </CardHeaderContent>
-        </MudCardHeader>
+</MudContainer>
 
-        <MudCardContent>
+@*tech stack*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start">
+                <p>In my workflow I:</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
             <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelineAlign="TimelineAlign.Default" TimelinePosition="TimelinePosition.Alternate">
 
                 <MudTimelineItem Color="Color.Success" Variant="Variant.Filled" Elevation="3">
@@ -27,7 +29,7 @@
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
+                        <CustomText color="Color.Success">
                             Work best with
                         </CustomText>
                     </ItemOpposite>
@@ -40,7 +42,7 @@
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
+                        <CustomText color="Color.Primary">
                             Have worked with
                         </CustomText>
                     </ItemOpposite>
@@ -53,29 +55,27 @@
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
+                        <CustomText color="Color.Warning">
                             Am willing to learn
                         </CustomText>
                     </ItemOpposite>
                 </MudTimelineItem>
             </MudTimeline>
-        </MudCardContent>
+        </ChildContent>
     </CustomCard>
     <br/>
 </MudContainer>
 
-
+@*studies*@
 <MudContainer>
     <CustomCard>
-        <MudCardHeader>
-            <CardHeaderContent>
+        <HeaderFragment>
                 <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5 ">
                     <p>My studies so far:</p>
                 </MudText>
-            </CardHeaderContent>
-        </MudCardHeader>
+        </HeaderFragment>
 
-        <MudCardContent>
+        <ChildContent>
             <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelineAlign="TimelineAlign.Default" TimelinePosition="TimelinePosition.Alternate">
 
                 <MudTimelineItem Color="Color.Success" Variant="Variant.Filled" Elevation="3">
@@ -86,7 +86,7 @@
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
+                        <CustomText color="Color.Success">
                             Master's degree
                         </CustomText>
                     </ItemOpposite>
@@ -100,7 +100,7 @@
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
+                        <CustomText color="Color.Primary">
                             Bachelor's degree
                         </CustomText>
                     </ItemOpposite>
@@ -114,41 +114,38 @@
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
+                        <CustomText color="Color.Warning">
                             Highschool
                         </CustomText>
                     </ItemOpposite>
                 </MudTimelineItem>
             </MudTimeline>
-        </MudCardContent>
+        </ChildContent>
     </CustomCard>
     <br />
 </MudContainer>
 
-
+@*languages*@
 <MudContainer>
     <CustomCard>
-        <MudCardHeader>
-            <CardHeaderContent>
-                <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5 ">
-                    <p>My studies so far:</p>
-                </MudText>
-            </CardHeaderContent>
-        </MudCardHeader>
+        <HeaderFragment>
+           <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5 ">
+               <p>Known languages:</p>
+           </MudText>
+        </HeaderFragment>
 
-        <MudCardContent>
+        <ChildContent>
             <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelineAlign="TimelineAlign.Default" TimelinePosition="TimelinePosition.Alternate">
 
                 <MudTimelineItem Color="Color.Success" Variant="Variant.Filled" Elevation="3">
                     <ItemContent>
                         <CustomText>
-                            <p>Romanian-American University</p>
-                            <p>Computer Science</p>
+                            <p>Native</p>
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
-                            Master's degree
+                        <CustomText color="Color.Success">
+                            Romanian
                         </CustomText>
                     </ItemOpposite>
                 </MudTimelineItem>
@@ -156,13 +153,12 @@
                 <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled" Elevation="3">
                     <ItemContent>
                         <CustomText>
-                            <p>Romanian-American University</p>
-                            <p>Computer Science</p>
+                            <p>Advanced (C1)</p>
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
-                            Bachelor's degree
+                        <CustomText color="Color.Primary">
+                            English
                         </CustomText>
                     </ItemOpposite>
                 </MudTimelineItem>
@@ -170,18 +166,69 @@
                 <MudTimelineItem Color="Color.Warning" Variant="Variant.Filled" Elevation="3">
                     <ItemContent>
                         <CustomText>
-                            <p>"Ion Luca Caragiale Ploiesti" National College</p>
-                            <p>Natural Science (Biology, Physics, Chemestry)</p>
+                            <p>Beginner</p>
                         </CustomText>
                     </ItemContent>
                     <ItemOpposite>
-                        <CustomText>
-                            Highschool
+                        <CustomText color="Color.Warning">
+                            German
                         </CustomText>
                     </ItemOpposite>
                 </MudTimelineItem>
             </MudTimeline>
-        </MudCardContent>
+        </ChildContent>
+    </CustomCard>
+    <br />
+</MudContainer>
+
+@*socials*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5 ">
+                <p>Socials:</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
+            <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelineAlign="TimelineAlign.Default" TimelinePosition="TimelinePosition.Alternate">
+
+                <MudTimelineItem Color="Color.Success" Variant="Variant.Filled" Elevation="3">
+                    <ItemContent>
+                        <MudLink>
+                            
+                        </MudLink>
+                    </ItemContent>
+                    <ItemOpposite>
+                        <MudIcon Icon="@Icons.Custom.Brands.GitHub" />
+                    </ItemOpposite>
+                </MudTimelineItem>
+
+                <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled" Elevation="3">
+                    <ItemContent>
+                        <MudLink Href="https://www.linkedin.com/in/dragos-andrei-popescu-095962184/">
+                            <MudText Align="Align.Right">
+                                <b>LinkedIn Profile</b>
+                            </MudText>
+                        </MudLink>
+                    </ItemContent>
+                    <ItemOpposite>
+                        <MudIcon Icon="@Icons.Custom.Brands.LinkedIn" />
+                    </ItemOpposite>
+                </MudTimelineItem>
+
+                <MudTimelineItem Color="Color.Warning" Variant="Variant.Filled" Elevation="3">
+                    <ItemContent>
+                        <MudLink>
+
+                        </MudLink>
+                    </ItemContent>
+                    <ItemOpposite>
+                        <MudIcon Icon="@Icons.Custom.Brands.Facebook" />
+                    </ItemOpposite>
+                </MudTimelineItem>
+            </MudTimeline>
+        </ChildContent>
     </CustomCard>
     <br />
 </MudContainer>

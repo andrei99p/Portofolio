@@ -1,7 +1,9 @@
-﻿<MudText Align="Align.Center" Style="font-weight:bold;">
+﻿<MudText Align="Align.Center" Style="font-weight:bold;" Color=color>
     @ChildContent
 </MudText>
 @code{
     [Parameter]
-    public RenderFragment ChildContent { get; set; }
+    public RenderFragment? ChildContent { get; set; }
+    [Parameter]
+    public Color color { get; set; }
 }

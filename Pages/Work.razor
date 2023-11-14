@@ -2,6 +2,63 @@
 
 <PageTitle>Work</PageTitle>
 
+<MudContainer>
+    <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5">
+        <p>Here is a bit about my working experience.</p>
+    </MudText>
+    <br />
+</MudContainer>
+
+@*Employers*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start">
+                <p>Employers:</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
+            <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelineAlign="TimelineAlign.Default" TimelinePosition="TimelinePosition.Alternate">
+
+                <MudTimelineItem Color="Color.Success" Variant="Variant.Filled" Elevation="3">
+                    <ItemContent>
+                        <CustomText>
+                            2021-Present
+                        </CustomText>
+                    </ItemContent>
+
+                    <ItemOpposite>
+                        <CustomText color="Color.Success">
+                            SC Informatica Feroviara SA                          
+                        </CustomText>
+                    </ItemOpposite>
+                </MudTimelineItem>
+
+            </MudTimeline>
+        </ChildContent>
+    </CustomCard>
+    <br/>
+</MudContainer>
+
+
+@*Projects*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start">
+                <p>Projects:</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
+            <MudTimeline>
+
+            </MudTimeline>
+        </ChildContent>
+    </CustomCard>
+</MudContainer>
+
 @code {
 
 }
