@@ -191,43 +191,11 @@
         </HeaderFragment>
 
         <ChildContent>
-            <MudTimeline TimelineOrientation="TimelineOrientation.Vertical" TimelineAlign="TimelineAlign.Default" TimelinePosition="TimelinePosition.Alternate">
-
-                <MudTimelineItem Color="Color.Success" Variant="Variant.Filled" Elevation="3">
-                    <ItemContent>
-                        <MudLink>
-                            
-                        </MudLink>
-                    </ItemContent>
-                    <ItemOpposite>
-                        <MudIcon Icon="@Icons.Custom.Brands.GitHub" />
-                    </ItemOpposite>
-                </MudTimelineItem>
-
-                <MudTimelineItem Color="Color.Primary" Variant="Variant.Filled" Elevation="3">
-                    <ItemContent>
-                        <MudLink Href="https://www.linkedin.com/in/dragos-andrei-popescu-095962184/">
-                            <MudText Align="Align.Right">
-                                <b>LinkedIn Profile</b>
-                            </MudText>
-                        </MudLink>
-                    </ItemContent>
-                    <ItemOpposite>
-                        <MudIcon Icon="@Icons.Custom.Brands.LinkedIn" />
-                    </ItemOpposite>
-                </MudTimelineItem>
-
-                <MudTimelineItem Color="Color.Warning" Variant="Variant.Filled" Elevation="3">
-                    <ItemContent>
-                        <MudLink>
-
-                        </MudLink>
-                    </ItemContent>
-                    <ItemOpposite>
-                        <MudIcon Icon="@Icons.Custom.Brands.Facebook" />
-                    </ItemOpposite>
-                </MudTimelineItem>
-            </MudTimeline>
+            <div class="d-flex justify-center align-content-center gap-10">
+                <MudIconButton Color="Color.Primary" Size="Size.Large" Rel="noreferrer noopener" Target="_blank" Href="https://github.com/andrei99p?tab=repositories" Icon="@Icons.Custom.Brands.GitHub" />
+                <MudIconButton Color="Color.Info" Size="Size.Large" Rel="noreferrer noopener" Target="_blank" Href="https://www.linkedin.com/in/dragos-andrei-popescu-095962184/" Icon="@Icons.Custom.Brands.LinkedIn" />
+                <MudIconButton Style="color:#3b5998" Size="Size.Large" Rel="noreferrer noopener" Target="_blank" Href="https://www.facebook.com/andrei.popescu.7140" Icon="@Icons.Custom.Brands.Facebook" />
+            </div>
         </ChildContent>
     </CustomCard>
     <br />
