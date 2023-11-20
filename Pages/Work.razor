@@ -3,7 +3,7 @@
 <PageTitle>Work</PageTitle>
 
 <MudContainer>
-    <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5">
+    <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5" Style="letter-spacing:-1px;">
         <p>Here is a bit about my working experience.</p>
     </MudText>
     <br />
@@ -13,7 +13,7 @@
 <MudContainer>
     <CustomCard>
         <HeaderFragment>
-            <MudText Typo="Typo.h6" Align="Align.Start">
+            <MudText Typo="Typo.h6" Align="Align.Start" Style="letter-spacing:-1px;">
                 <p>Employers:</p>
             </MudText>
         </HeaderFragment>
@@ -46,37 +46,192 @@
 
 
 <MudContainer>
-    <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5">
+    <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5" Style="letter-spacing:-1px;">
         <p>Projects:</p>
     </MudText>
     <br />
 </MudContainer>
 
 @*Projects*@
+
+@**@
+
+@*SIMC*@
+
+@*EMM*@
+
+@*RoTramos*@
+
+@*Aqcuisitions*@
+
+@*iParc*@
+
+@*Cell detection*@
+
+@*Dental Clinic Management*@
+
+@*CalculatorCalorii*@
 <MudContainer>
     <CustomCard>
         <HeaderFragment>
-            <MudText Typo="Typo.h6" Align="Align.Start">
+            <MudText Typo="Typo.h6" Align="Align.Start" Style="letter-spacing:-1px;">
+                <p>Calories calculator</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
+            <MudCarousel Class="mud-width-full" TData="object" Style="height:400px;" AutoCycle=false EnableSwipeGesture>
+                <MudCarouselItem>
+                        <MudImage Src="resources/Calories_Main.png" Class="d-flex mx-auto my-auto" Style="height:100%;" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                        <MudImage Src="resources/Calories_Add.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                        <MudImage Src="resources/Calories_Modify.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                        <MudImage Src="resources/Calories_History.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+            </MudCarousel>
+
+            <CustomText_Spacing>
+                <p>A mobile application that allows the user to calculate the calories for registered products and their corresponding calories values.</p>
+                <p>The information is stored locally to be used in calculations or to be modified/deleted.</p>
+                <p>The application was developed using .NET MAUI and SQLite.</p>
+
+            </CustomText_Spacing>
+        </ChildContent>
+    </CustomCard>
+    <br />
+</MudContainer>
+
+@*CarPricePredictor*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start" Style="letter-spacing:-1px;">
+                <p>Car Price Predictor</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
+            <MudCarousel Class="mud-width-full" TData="object" Style="height:400px;" AutoCycle=false>
+                <MudCarouselItem>
+                    <MudImage Src="resources/Car_price_prediction_design.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                    <MudImage Src="resources/Car_price_prediction_test.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+            </MudCarousel>
+
+            <CustomText_Spacing>
+                <p>Using Azure ML I designed a pipeline that trains a model to predict prices of cars based on provided information.</p>
+                <p>The model is then deployed as an endpoint to be afterwards usable in further applications.</p>
+            </CustomText_Spacing>
+        </ChildContent>
+    </CustomCard>
+    <br/>
+</MudContainer>
+
+@*PWA*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start" Style="letter-spacing:-1px;">
+                <p>Progrssive Web App</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
+            <MudCarousel Class="mud-width-full" TData="object" Style="height:400px;" AutoCycle=false>
+                <MudCarouselItem>
+                    <MudImage Src="resources/PWA_login.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                    <MudImage Src="resources/PWA_add.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                    <MudImage Src="resources/PWA_info_light.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                    <MudImage Src="resources/PWA_info_dark.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+            </MudCarousel>
+
+            <CustomText_Spacing>
+                <p>This application has the purpose to mark the rehabillitation status of buildings.</p>
+                <p>By either selecting a place on the map or providing the address, along with other information a record will be made in the database.</p>
+                <p>This way every building will be visible on the map, represented by a pin colored based on its status. </p>
+                <p>The application also provides signup, login and logout functions.</p>
+                <p>It was developed as a Progressive Web App using Blazor WebAssembly along with EntityFramework and API for authentication.</p>
+            </CustomText_Spacing>
+        </ChildContent>
+    </CustomCard>
+    <br />
+</MudContainer>
+
+@*ProjectWebPage*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start" Style="letter-spacing:-1px;">
+                <p>Project Web Page</p>
+            </MudText>
+        </HeaderFragment>
+
+        <ChildContent>
+            <MudCarousel Class="mud-width-full" TData="object" Style="height:400px;" AutoCycle=false>
+                <MudCarouselItem>
+                    <MudImage Src="resources/WebPage_html_css_js_1.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+
+                <MudCarouselItem>
+                    <MudImage Src="resources/WebPage_html_css_js_2.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
+                </MudCarouselItem>
+            </MudCarousel>
+
+            <CustomText_Spacing>
+                <p>A simple web application that combines HTML, CSS and JS.</p>
+            </CustomText_Spacing>
+        </ChildContent>
+    </CustomCard>
+</MudContainer>
+
+@*Impresii Si Expresii*@
+<MudContainer>
+    <CustomCard>
+        <HeaderFragment>
+            <MudText Typo="Typo.h6" Align="Align.Start" Style="letter-spacing:-1px;">
                 <p>Impresii si Expresii</p>
             </MudText>
         </HeaderFragment>
 
         <ChildContent>
-            <MudCarousel Class="mud-width-full" TData="object" Style="height:400px;">
+            <MudCarousel Class="mud-width-full" TData="object" Style="height:400px;" AutoCycle=false>
                 <MudCarouselItem>
-                    <MudImage Src="resources/ImpresiiSiExpresii_top.png" Style="height:100%; width:100%; "/> 
+                    <MudImage Src="resources/ImpresiiSiExpresii_top.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
                 </MudCarouselItem>
 
                 <MudCarouselItem>
-                    <MudImage Src="resources/ImpresiiSiExpresii_bottom.png" Style="height:100%; width:100%; " />
+                    <MudImage Src="resources/ImpresiiSiExpresii_bottom.png" Class="mx-auto my-auto d-flex" Style="height:100%" />
                 </MudCarouselItem>
-            </MudCarousel>4
+            </MudCarousel>
 
-            <MudText Typo="Typo.h6" Align="Align.Center">
-                <p>:</p>
-            </MudText>
+            <CustomText_Spacing>
+                <p>A simple web application that displays a number of drawings and paintings.</p>
+                <p>It is developed using only HTML and CSS and is hosted as a static web app in Azure</p>
+            </CustomText_Spacing>
         </ChildContent>
     </CustomCard>
+    <br />
 </MudContainer>
 
 @code {

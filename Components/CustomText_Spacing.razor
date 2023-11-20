@@ -1,0 +1,9 @@
+﻿<MudText Align="Align.Justify" Typo="Typo.h6" Style="letter-spacing:-1px;" Color=color>
+    @ChildContent
+</MudText>
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+    [Parameter]
+    public Color color { get; set; }
+}
