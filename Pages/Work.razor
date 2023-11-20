@@ -45,19 +45,36 @@
 </MudContainer>
 
 
+<MudContainer>
+    <MudText Typo="Typo.h6" Align="Align.Start" Class="mt-5">
+        <p>Projects:</p>
+    </MudText>
+    <br />
+</MudContainer>
+
 @*Projects*@
 <MudContainer>
     <CustomCard>
         <HeaderFragment>
             <MudText Typo="Typo.h6" Align="Align.Start">
-                <p>Projects:</p>
+                <p>Impresii si Expresii</p>
             </MudText>
         </HeaderFragment>
 
         <ChildContent>
-            <MudTimeline>
+            <MudCarousel Class="mud-width-full" TData="object" Style="height:400px;">
+                <MudCarouselItem>
+                    <MudImage Src="resources/ImpresiiSiExpresii_top.png" Style="height:100%; width:100%; "/> 
+                </MudCarouselItem>
 
-            </MudTimeline>
+                <MudCarouselItem>
+                    <MudImage Src="resources/ImpresiiSiExpresii_bottom.png" Style="height:100%; width:100%; " />
+                </MudCarouselItem>
+            </MudCarousel>4
+
+            <MudText Typo="Typo.h6" Align="Align.Center">
+                <p>:</p>
+            </MudText>
         </ChildContent>
     </CustomCard>
 </MudContainer>
