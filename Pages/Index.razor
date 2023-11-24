@@ -2,18 +2,33 @@
 
 <PageTitle>Home</PageTitle>
 
-
-
-<div class="d-flex justify-space-between">
+@* <div class="d-flex justify-space-between">
     <MudContainer Fixed MaxWidth="MaxWidth.ExtraSmall" Class="mt-15 ml-15">
          <MudText Align="Align.Left" Typo="Typo.h1" Style="color: forestgreen; font-family:'Baskerville Old Face'; letter-spacing:-2px; ">Hello!</MudText>
          <MudText Align="Align.Left" Typo="Typo.h5" Style="letter-spacing:-1px;">I am <span style="color: forestgreen; font-family:'Baskerville Old Face'; font-size:xx-large; ">Andrei</span>, a software developer</MudText>
          <MudText Align="Align.Left" Typo="Typo.h5" Style="letter-spacing:-1px;">based in Bucharest, Romania.</MudText>
      </MudContainer>
 
-     <MudImage Src="resources/id.jpg" ObjectPosition="ObjectPosition.RightTop" Style="max-height:auto; max-width:15%; border-radius:50%; margin-right:10%;" />
-</div>
+     <MudImage  Src="resources/id.jpg" ObjectPosition="ObjectPosition.RightTop" Style="max-height:auto; max-width:15%; border-radius:50%; margin-right:10%;" />
+</div> *@
 
+<MudItem>
+    <MudGrid Justify="Justify.SpaceEvenly">
+        <MudItem xs="12" md="4">
+            <MudContainer Fixed MaxWidth="MaxWidth.ExtraSmall" Class="mt-15 ml-15">
+                 <MudText Align="Align.Left" Typo="Typo.h1" Style="color: forestgreen; font-family:'Baskerville Old Face'; letter-spacing:-2px; ">Hello!</MudText>
+                 <MudText Align="Align.Left" Typo="Typo.h5" Style="letter-spacing:-1px;">I am <span style="color: forestgreen; font-family:'Baskerville Old Face'; font-size:xx-large; ">Andrei</span>, a software developer</MudText>
+                 <MudText Align="Align.Left" Typo="Typo.h5" Style="letter-spacing:-1px;">based in Bucharest, Romania.</MudText>
+             </MudContainer>
+        </MudItem>
+        <MudItem xs="0" md="4">
+
+        </MudItem>
+        <MudItem xs="12" md="4">
+             <MudImage Src="resources/id.jpg" Style="max-height:50%; height:50%; max-width:50%; width:auto; border-radius:50%;"  Class="align-self-end d-flex mx-auto my-15"/>
+        </MudItem>
+    </MudGrid>
+</MudItem>
 
 @*  @for(int i = 0; i < 100; i++)
 {
