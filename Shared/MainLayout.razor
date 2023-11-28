@@ -6,7 +6,6 @@
 <MudDialogProvider />
 <MudSnackbarProvider />
 
-
 <MudAppBar Class="white" Style="z-index:3;">
     <MudCarousel Style="height:50px; width: 50px; padding:0px; margin:0px;" ShowArrows=false ShowBullets=false AutoCycle=false TData="object" SelectedIndex=index @onmouseenter=@IconMouseOver @onmouseleave=@IconMouseOut>
         <MudCarouselItem Class="d-flex align-center justify-center" Transition=Transition.Fade Color="@Color.Inherit">
@@ -17,7 +16,7 @@
         </MudCarouselItem>
     </MudCarousel>
     <div class="d-flex align-self-center">
-        <SVG width="Width.md" height="25" />
+        <SVG width="Width.sm" height="15" Path="/" />
     </div>
     <MudSpacer />
     <CustomButton Text="Home" Path="/"/>
@@ -31,7 +30,7 @@
     </MudMainContent>
 </MudLayout>
 
-<MudImage Src="resources/tree-oval.svg" Style="position:fixed; margin:0px; padding-bottom:0px; right:0px; bottom:0px; width:22vw; user-select:none; z-index:-1; " />
+<MudImage Src="resources/tree-oval.svg" Style="position:fixed; margin:0px; padding-bottom:0px; right:0px; bottom:0px; width:22vw; max-height:50vh; user-select:none; z-index:-1; " />
 <MudAppBar Bottom="true" Color="Color.Dark" Style="overflow:hidden; z-index:0; padding:0;" Class="d-flex">
     <MudContainer Class="align-self-start">
         <MudText Typo="Typo.body2" Align="Align.Center" Class="align-self-start" Style="padding:0px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
@@ -44,7 +43,7 @@
              tel. : +40 733 216 828
         </MudText>
     </MudContainer>
-    <MudImage Src="resources/tree-circle.svg" Style="z-index:0; position:fixed; margin:0px; padding-bottom:0px; left:0px; bottom:0px; width:20vw; user-select:none;" />
+    <MudImage Src="resources/tree-circle.svg" Style="z-index:0; position:fixed; margin:0px; padding-bottom:0px; left:0px; bottom:0px; width:20vw; max-height:40vh; user-select:none;" />
 
 </MudAppBar>
 
