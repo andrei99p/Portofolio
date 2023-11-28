@@ -1,7 +1,7 @@
 ﻿@inject NavigationManager nav
 
-<MudButton OnClick="GoTo" DisableRipple Variant="Variant.Text">
-    <svg width=@width height=@height viewBox="0 0 716.701 93.3" xmlns="http://www.w3.org/2000/svg">
+<MudButton OnClick="GoTo" Variant="Variant.Text">
+    <svg height=13px viewBox="0 0 716.701 93.3" xmlns="http://www.w3.org/2000/svg">
         <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="#000" style="stroke:#000;stroke-width:0.25mm;fill:#000">
             <path d="M 663.6 36.1 L 662.8 35.8 A 14.015 14.015 0 0 1 663.211 32.331 A 10.906 10.906 0 0 1 664.8 28.8 Q 666.8 25.9 669.9 24.4 A 14.823 14.823 0 0 1
                     674.309 23.033 A 13.58 13.58 0 0 1 676.2 22.9 Q 678.8 22.9 681.2 23.95 Q 683.6 25 685.15 27.2 A 8.256 8.256 0 0 1 686.464 30.29 A 11.669 11.669 0 0 1
@@ -18,10 +18,6 @@
 </MudButton>
 
 @code{
-    [Parameter]
-    public Width width { get; set; }
-    [Parameter]
-    public double height { get; set; }
     [Parameter]
     public string Path { get; set; }
 
